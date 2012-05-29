@@ -200,7 +200,7 @@ module ActionWebService # :nodoc:
             end
 
             xm = Builder::XmlMarkup.new(:target => xml, :indent => 2)
-            xm.instruct!
+            xm.instruct!(:xml, :encoding => 'utf-8')
             xm.definitions('name'            => wsdl_service_name,
                            'targetNamespace' => namespace,
                            'xmlns:typens'    => namespace,
