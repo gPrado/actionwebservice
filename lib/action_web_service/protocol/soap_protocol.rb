@@ -26,7 +26,7 @@ module ActionWebService # :nodoc:
       end
       
       class SoapProtocol < AbstractProtocol # :nodoc:
-        AWSEncoding = 'UTF-8'
+        AWSEncoding = 'utf-8'
         XSDEncoding = 'UTF8'
 
         attr :marshaler
